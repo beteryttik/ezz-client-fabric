@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "ezzclient",
+  "version": "${version}",
+  "name": "Ezz Client",
+  "description": "Клиентский мод с системой модулей, HUD и чат-командами",
+  "authors": ["betryttik"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.ezz.client.EzzClient"]
+  },
+  "mixins": ["ezzclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
